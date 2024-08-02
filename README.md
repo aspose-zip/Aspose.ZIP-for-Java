@@ -65,7 +65,8 @@ try (Archive archive = new Archive("input_archive.zip")) {
 ## How to create 7z Archive with AES Encryption
 
 ```java
-try (SevenZipArchive archive = new SevenZipArchive(new SevenZipEntrySettings(null, new SevenZipAESEncryptionSettings("p@s$")))) {
+try (SevenZipArchive archive = new SevenZipArchive(
+        new SevenZipEntrySettings(null, new SevenZipAESEncryptionSettings("p@s$")))) {
     archive.createEntry("data.bin", new ByteArrayInputStream(new byte[] { 0x00, (byte)0xFF }));
     archive.save("result_archive.7z");
 }
