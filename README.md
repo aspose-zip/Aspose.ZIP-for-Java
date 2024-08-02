@@ -1,4 +1,4 @@
-![GitHub all releases](https://img.shields.io/github/downloads/aspose-zip/Aspose.ZIP-for-Java/total) ![GitHub](https://img.shields.io/github/license/aspose-zip/Aspose.ZIP-for-Java)
+![GitHub](https://img.shields.io/github/license/aspose-zip/Aspose.ZIP-for-Java)
 
 # Java API for Files Compression & Archiving
 
