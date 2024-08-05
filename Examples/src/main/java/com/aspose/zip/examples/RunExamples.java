@@ -208,7 +208,12 @@ public class RunExamples {
         }
 
         File dir = new File(System.getProperty("user.dir"));
-        dir = new File(dir, "Examples");
+
+        // User can open root project or Example subproject
+        if (!dir.toPath().endsWith("Examples")) {
+            dir = new File(dir, "Examples");
+        }
+
         dir = new File(dir, "src");
         dir = new File(dir, "main");
         dir = new File(dir, "resources");
