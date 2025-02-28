@@ -19,7 +19,7 @@ public class OpenGZipArchive {
         String outDir = RunExamples.getOutDir(OpenGZipArchive.class);
 
         // Extracts the archive and copies extracted content to file stream.
-        try (GzipArchive archive = new GzipArchive(dataDir + "archive.gz")) {
+        try (GzipArchive archive = new GzipArchive(dataDir + "sample.gz")) {
             try (FileOutputStream extracted = new FileOutputStream(new File(outDir + "data.bin"))) {
                 InputStream unpacked = archive.open();
                 byte[] buffer = new byte[8192];
